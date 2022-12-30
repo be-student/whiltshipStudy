@@ -265,3 +265,19 @@ var 은 키워드가 아니다
 런타임 오버헤드도 없다
 var 를 사용했을 경우에 이제 타입에 어노테이션 붙히는 과정을 조금 편하게 쓸 수도 있다는 장점이 있다고 한다
 
+# 추가 피드백
+
+* 자바에서는 unsigned 가 가능하다
+
+```java
+class Unsigned {
+
+    public static void main(String[] args) {
+        int unsigned = Integer.parseUnsignedInt("2222222222");
+        System.out.println(unsigned);//음수
+        System.out.println(Integer.toUnsignedString(unsigned));//양수
+    }
+}
+```
+
+* 0x 를 붙이면 16진수로 인식한다
