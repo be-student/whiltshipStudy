@@ -5,11 +5,13 @@ package whiltshipstudy;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class AppTest {
 
     @Test
+    @DisplayName("메인 테스트")
     void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
