@@ -2,8 +2,8 @@ package whiltshipstudy.week4.linkedlist;
 
 public class ListNode {
 
-    int value;
-    ListNode next;
+    public ListNode next;
+    public int value;
 
     public ListNode(int value) {
         this.value = value;
